@@ -1,0 +1,13 @@
+<h1>My TravelApp</h1>
+<ul class="locais">
+    <ng-container>
+        <li *ngFor="let local of locais">
+            <div>
+                <h3>{{ local.nome }}</h3>
+                <h4>{{ local.preco }}</h4>
+                <h5 *ngIf="local.id !== 0">{{ local.id }}</h5>
+                
+            </div>
+        </li>
+    </ng-container>
+</ul>
